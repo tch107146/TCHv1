@@ -1,10 +1,15 @@
-# DEIMv2-SE: Real-Time Object Detection with Attention Memory Residual and Self-Attention Skip
+# TCHv1: Real-Time Object Detection Based on DEIMv2
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
 [![LICENSE](https://img.shields.io/badge/License-Apache_2.0-green.svg)](LICENSE)
+[![DEIMv2](https://img.shields.io/badge/Based_on-DEIMv2-orange.svg)](https://github.com/Intellindust-AI-Lab/DEIMv2)
 
-DEIMv2-SE is an enhanced version of the DEIMv2 object detector, integrated with **Attention Memory Residual (AMR)**, **Self-Attention Skip (SA-Skip)**, and **Stochastic Depth (Random Layer Dropout)**. This project leverages DINOv3 STAs (ViT-Tiny) as the backbone, paired with a HybridEncoder and a customized Transformer Decoder to deliver superior detection mAP and faster convergence speeds.
+TCHv1 is an enhanced object detector built upon the original [DEIMv2](https://github.com/Intellindust-AI-Lab/DEIMv2) repository. It integrates **Attention Memory Residual (AMR)**, **Self-Attention Skip (SA-Skip)**, and **Stochastic Depth (Random Layer Dropout)** to optimize real-time performance. This project leverages DINOv3 STAs (ViT-Tiny) as the backbone, paired with a HybridEncoder and a customized Transformer Decoder to deliver superior detection mAP and faster convergence speeds.
+
+
+> [!IMPORTANT]
+> **Project Status**: This project is currently under review for **NCWIA 2026**.
 
 ---
 
@@ -40,7 +45,7 @@ During training, the decoder randomly drops intermediate layers with a linear dr
 
 Experimental results trained on a custom 4-class COCO format dataset for 120 epochs:
 
-| Metric / Model | Baseline DEIMv2 | DEIMv2-SE (Ours) | Difference / Improvement |
+| Metric / Model | Baseline DEIMv2 | TCHv1 (Ours) | Difference / Improvement |
 | :--- | :---: | :---: | :---: |
 | **Best AP50:95** | 0.7795 (Epoch 114) | **0.7803** (Epoch 114) | **+0.0008** |
 | **Best AP50** | 0.9571 (Epoch 114) | **0.9589** (Epoch 101) | **+0.0018** |
@@ -88,7 +93,7 @@ DEIMTransformer:
 ```
 
 ### 3. Training
-To start training the DEIMv2-SE model from scratch or using a checkpoint:
+To start training the TCHv1 model from scratch or using a checkpoint:
 ```bash
 python train.py -c configs/deimv2/deimv2_dinov3_s_coco.yml --use-amp
 ```
