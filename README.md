@@ -12,11 +12,8 @@ DEIMv2-SE is an enhanced version of the DEIMv2 object detector, integrated with 
 
 Below is the visualization of the object detection results in action:
 
-<p align="center">
-  <video src="https://github.com/tch107146/TCHv1/raw/main/balivideo_Modified.mp4" width="100%" max-width="800px" controls>
-    Your browser does not support the video tag.
-  </video>
-</p>
+https://github.com/user-attachments/assets/5009bcb7-af76-421e-982f-92bdae909f21
+
 
 *The video `balivideo_Modified.mp4` is hosted on GitHub repository `tch107146/TCHv1`.*
 
