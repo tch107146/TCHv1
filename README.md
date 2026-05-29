@@ -1,11 +1,11 @@
-# TCHv1: Real-Time Object Detection Based on DEIMv2
+# AbyssNet-v1: Real-Time Object Detection Based on DEIMv2
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
 [![LICENSE](https://img.shields.io/badge/License-Apache_2.0-green.svg)](LICENSE)
 [![DEIMv2](https://img.shields.io/badge/Based_on-DEIMv2-orange.svg)](https://github.com/Intellindust-AI-Lab/DEIMv2)
 
-TCHv1 is an enhanced object detector built upon the original [DEIMv2](https://github.com/Intellindust-AI-Lab/DEIMv2) repository. It integrates **Attention Memory Residual (AMR)**, **Self-Attention Skip (SA-Skip)**, and **Stochastic Depth (Random Layer Dropout)** to optimize real-time performance. This project leverages DINOv3 STAs (ViT-Tiny) as the backbone, paired with a HybridEncoder and a customized Transformer Decoder to deliver superior detection mAP and faster convergence speeds.
+AbyssNet-v1 is an enhanced object detector built upon the original [DEIMv2](https://github.com/Intellindust-AI-Lab/DEIMv2) repository. It integrates **Attention Memory Residual (AMR)**, **Self-Attention Skip (SA-Skip)**, and **Stochastic Depth (Random Layer Dropout)** to optimize real-time performance. This project leverages DINOv3 STAs (ViT-Tiny) as the backbone, paired with a HybridEncoder and a customized Transformer Decoder to deliver superior detection mAP and faster convergence speeds.
 
 
 > [!IMPORTANT]
@@ -20,7 +20,7 @@ Below is the visualization of the object detection results in action:
 https://github.com/user-attachments/assets/5009bcb7-af76-421e-982f-92bdae909f21
 
 
-*The video `balivideo_Modified.mp4` is hosted on GitHub repository `tch107146/TCHv1`.*
+*The video `balivideo_Modified.mp4` is hosted on GitHub repository `tch107146/AbyssNet-v1`.*
 
 ---
 
@@ -28,7 +28,7 @@ https://github.com/user-attachments/assets/5009bcb7-af76-421e-982f-92bdae909f21
 
 Experimental results trained on a custom 4-class COCO format dataset for 120 epochs:
 
-| Metric / Model | Baseline DEIMv2 | TCHv1 (Ours) | Difference / Improvement |
+| Metric / Model | Baseline DEIMv2 | AbyssNet-v1 (Ours) | Difference / Improvement |
 | :--- | :---: | :---: | :---: |
 | **Best AP50:95** | 0.7795 (Epoch 114) | **0.7803** (Epoch 114) | **+0.0008** |
 | **Best AP50** | 0.9571 (Epoch 114) | **0.9589** (Epoch 101) | **+0.0018** |
@@ -76,7 +76,7 @@ DEIMTransformer:
 ```
 
 ### 3. Training
-To start training the TCHv1 model from scratch or using a checkpoint:
+To start training the AbyssNet-v1 model from scratch or using a checkpoint:
 ```bash
 python train.py -c configs/deimv2/deimv2_dinov3_s_coco.yml --use-amp
 ```
