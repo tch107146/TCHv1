@@ -44,7 +44,6 @@ Experimental results trained on a custom 4-class COCO format dataset for 120 epo
 ## 📁 Repository Structure
 
 ```yaml
-D:\GIT_TCHv1
 ├── configs/                   # Configuration files (deimv2_dinov3_s_coco.yml)
 ├── engine/
 │   └── deim/
