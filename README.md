@@ -31,7 +31,7 @@ Experimental results trained on a custom 4-class COCO format dataset for 120 epo
 | Metric / Model | Baseline DEIMv2 | AbyssNet-v1 (Ours) | Difference / Improvement |
 | :--- | :---: | :---: | :---: |
 | **Best AP50:95** | 0.7775 (Epoch 114) | **0.7803** (Epoch 114) | **+0.0036** |
-| **Best AP50** | 0.9571 (Epoch 114) | **0.9578** (Epoch 101) | **+0.0007** |
+| **Best AP50** | 0.9571 (Epoch 114) | **0.9589** (Epoch 101) | **+0.0018** |
 | **Best AP75** | 0.8683 | **0.8730** | **+0.0047** |
 | **Total training FLOPs** | 11.97 G | **11.01 G** | **-8.33%** |
 | **Total training time** | 10h 18m 41s | **8h 56m 44s** | **Fastened by 13.25%** |
